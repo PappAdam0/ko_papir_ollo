@@ -90,6 +90,7 @@
             this.pbJatekos.Location = new System.Drawing.Point(42, 48);
             this.pbJatekos.Name = "pbJatekos";
             this.pbJatekos.Size = new System.Drawing.Size(200, 200);
+            this.pbJatekos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbJatekos.TabIndex = 4;
             this.pbJatekos.TabStop = false;
             // 
@@ -98,6 +99,7 @@
             this.pbSzamitogep.Location = new System.Drawing.Point(320, 48);
             this.pbSzamitogep.Name = "pbSzamitogep";
             this.pbSzamitogep.Size = new System.Drawing.Size(200, 200);
+            this.pbSzamitogep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSzamitogep.TabIndex = 5;
             this.pbSzamitogep.TabStop = false;
             // 
@@ -118,6 +120,7 @@
             this.btnKo.TabIndex = 7;
             this.btnKo.Text = "Kő";
             this.btnKo.UseVisualStyleBackColor = true;
+            this.btnKo.Click += new System.EventHandler(this.btnKo_Click);
             // 
             // btnPapir
             // 
@@ -127,6 +130,7 @@
             this.btnPapir.TabIndex = 8;
             this.btnPapir.Text = "Papír";
             this.btnPapir.UseVisualStyleBackColor = true;
+            this.btnPapir.Click += new System.EventHandler(this.btnPapir_Click);
             // 
             // btnOllo
             // 
@@ -136,15 +140,18 @@
             this.btnOllo.TabIndex = 9;
             this.btnOllo.Text = "Olló";
             this.btnOllo.UseVisualStyleBackColor = true;
+            this.btnOllo.Click += new System.EventHandler(this.btnOllo_Click);
             // 
             // btnKilepes
             // 
+            this.btnKilepes.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnKilepes.Location = new System.Drawing.Point(53, 401);
             this.btnKilepes.Name = "btnKilepes";
             this.btnKilepes.Size = new System.Drawing.Size(128, 34);
             this.btnKilepes.TabIndex = 10;
             this.btnKilepes.Text = "Kilépés";
             this.btnKilepes.UseVisualStyleBackColor = true;
+            this.btnKilepes.Click += new System.EventHandler(this.btnKilepes_Click);
             // 
             // btnSzabaly
             // 
@@ -163,6 +170,7 @@
             this.btnUj.TabIndex = 12;
             this.btnUj.Text = "Új játék";
             this.btnUj.UseVisualStyleBackColor = true;
+            this.btnUj.Click += new System.EventHandler(this.btnUj_Click);
             // 
             // panel1
             // 
@@ -194,6 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnKilepes;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
